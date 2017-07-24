@@ -833,7 +833,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/大众分享/DZFX.pch";
 				INFOPLIST_FILE = "大众分享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gztz.dzfx.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gztz.dzfx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -847,7 +847,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/大众分享/DZFX.pch";
 				INFOPLIST_FILE = "大众分享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gztz.dzfx.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gztz.dzfx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
