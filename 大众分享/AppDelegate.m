@@ -8,6 +8,19 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+//微信SDK头文件
+#import "WXApi.h"
+
+#define WXkey @"wx66f1139f0dd91510"
+#define WXSecret @"22b3f53e0124b8c652fd6512f7ccca10"
+
+#define QQId  @"1106101035"
+#define QQKey @"2dxTkbfCDhE6tyvP"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +44,42 @@
     return YES;
 }
 
+- (void)shareSDKRegisn {
+    
+    [ShareSDK registerActivePlatforms:@[
+                                        @(SSDKPlatformTypeWechat),
+                                        @(SSDKPlatformTypeQQ)] onImport:^(SSDKPlatformType platformType) {
+                                            switch (platformType)
+                                            {
+                                                case SSDKPlatformTypeWechat:
+                                                    [ShareSDKConnector connectWeChat:[WXApi class]];
+                                                    break;
+                                                case SSDKPlatformTypeQQ:
+                                                    [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                                                    break;
+                                                default:
+                                                    break;
+                                            }
+                                        } onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+                                            switch (platformType)
+                                            {
+                                                case SSDKPlatformTypeWechat:
+                                                    [appInfo SSDKSetupWeChatByAppId:WXkey
+                                                                          appSecret:WXSecret];
+                                                    break;
+                                                case SSDKPlatformTypeQQ:
+                                                    [appInfo SSDKSetupQQByAppId:QQId
+                                                                         appKey:QQKey
+                                                                       authType:SSDKAuthTypeBoth];
+                                                    break;
+                                                default:
+                                                    break;
+                                            }
+                                            
+                                        }];
+    
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

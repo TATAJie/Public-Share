@@ -10,6 +10,7 @@
 		0147DCC579DF99FEF27827BC /* libPods-大众分享UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C3407760DA8EE4F4A0281D /* libPods-大众分享UITests.a */; };
 		59E18A1105D839491DF4F44B /* libPods-大众分享.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 448CF4DC8FBA063BA71C4FD7 /* libPods-大众分享.a */; };
 		63D9DF70D7589C4077497127 /* libPods-大众分享Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA70D4F34BE91F4B15C22DD /* libPods-大众分享Tests.a */; };
+		8F22609F1F25CB0A001589EE /* ShareTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F22609E1F25CB0A001589EE /* ShareTools.m */; };
 		8F720DC01F0F619C00DE7FD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F720DBF1F0F619C00DE7FD7 /* main.m */; };
 		8F720DC31F0F619C00DE7FD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F720DC21F0F619C00DE7FD7 /* AppDelegate.m */; };
 		8F720DC91F0F619C00DE7FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F720DC71F0F619C00DE7FD7 /* Main.storyboard */; };
@@ -64,6 +65,8 @@
 		448CF4DC8FBA063BA71C4FD7 /* libPods-大众分享.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-大众分享.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C3407760DA8EE4F4A0281D /* libPods-大众分享UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-大众分享UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3C024E524B526E22AFC94D /* Pods-大众分享.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-大众分享.release.xcconfig"; path = "Pods/Target Support Files/Pods-大众分享/Pods-大众分享.release.xcconfig"; sourceTree = "<group>"; };
+		8F22609D1F25CB0A001589EE /* ShareTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareTools.h; sourceTree = "<group>"; };
+		8F22609E1F25CB0A001589EE /* ShareTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareTools.m; sourceTree = "<group>"; };
 		8F720DBB1F0F619C00DE7FD7 /* 大众分享.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "大众分享.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F720DBF1F0F619C00DE7FD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F720DC11F0F619C00DE7FD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +164,23 @@
 				FBD16FC5B65DE1E8A72B795C /* Pods-大众分享UITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F22609B1F25CB0A001589EE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8F22609C1F25CB0A001589EE /* ShareTools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8F22609C1F25CB0A001589EE /* ShareTools */ = {
+			isa = PBXGroup;
+			children = (
+				8F22609D1F25CB0A001589EE /* ShareTools.h */,
+				8F22609E1F25CB0A001589EE /* ShareTools.m */,
+			);
+			path = ShareTools;
 			sourceTree = "<group>";
 		};
 		8F720DB21F0F619C00DE7FD7 = {
@@ -336,6 +356,7 @@
 		8F720E0F1F0F622700DE7FD7 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				8F22609B1F25CB0A001589EE /* Tools */,
 				8F720E101F0F622700DE7FD7 /* Categories */,
 			);
 			path = Libs;
@@ -675,6 +696,7 @@
 				8F720E231F0F622700DE7FD7 /* Config.m in Sources */,
 				8F720E1A1F0F622700DE7FD7 /* BaseTableViewController.m in Sources */,
 				8F720E211F0F622700DE7FD7 /* SQCodeViewController.m in Sources */,
+				8F22609F1F25CB0A001589EE /* ShareTools.m in Sources */,
 				8F720E241F0F622700DE7FD7 /* UIColor+Hex.m in Sources */,
 				8F720E1E1F0F622700DE7FD7 /* HomeViewController.m in Sources */,
 				8F720DC01F0F619C00DE7FD7 /* main.m in Sources */,

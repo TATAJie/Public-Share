@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "SQCodeViewController.h"
+#import "ShareTools.h"
 @interface HomeViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong,nonatomic) MBProgressHUD *hud;
@@ -52,6 +53,9 @@
 - (void)rightItemAction
 {
     NSLog(@"分享");
+    [[ShareTools shareInstance]shareMenuParamsByText:@"不要问我为什么这么便宜，你的满意才是我的满意" images:@[] url:@"http://www.baidu.com" title:@"hahaha" onShareStateChanged:^(SSDKResponseState state) {
+        
+    }];
 }
 
 - (void)leftItemAction
