@@ -16,8 +16,8 @@
 //微信SDK头文件
 #import "WXApi.h"
 
-#define WXkey @"wx66f1139f0dd91510"
-#define WXSecret @"22b3f53e0124b8c652fd6512f7ccca10"
+#define WXkey @"wxc2b128af126e5634"
+#define WXSecret @"d3e0090b64a4d613259a9a66f013b3df"
 
 #define QQId  @"1106101035"
 #define QQKey @"2dxTkbfCDhE6tyvP"

@@ -44,7 +44,7 @@
     
     _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [_hud showAnimated:YES];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dzfx8.com/"]]];
     
     
 }
@@ -53,7 +53,7 @@
 - (void)rightItemAction
 {
     NSLog(@"分享");
-    [[ShareTools shareInstance]shareMenuParamsByText:@"不要问我为什么这么便宜，你的满意才是我的满意" images:@[] url:@"http://www.baidu.com" title:@"hahaha" onShareStateChanged:^(SSDKResponseState state) {
+    [[ShareTools shareInstance]shareMenuParamsByText:@"不要问我为什么这么便宜，你的满意才是我的满意" images:@[@"http://c.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=b1813b9ec9ea15ce41bbe80d833016c5/4bed2e738bd4b31c35bbc1a087d6277f9e2ff822.jpg"] url:@"http://www.baidu.com" title:@"嘎嘎" onShareStateChanged:^(SSDKResponseState state) {
         
     }];
 }
