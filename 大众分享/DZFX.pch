@@ -1,0 +1,42 @@
+//
+//  RRKShop.pch
+//  RRKShop
+//
+//  Created by MAC on 17/5/31.
+//  Copyright © 2017年 MAC. All rights reserved.
+//
+#ifdef __OBJC__
+#ifndef RRKShop_pch
+#define RRKShop_pch
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+//#import "YJRequestBase.h"
+//#import "UrlConig.h"
+//#import "YJGetHttpRequest.h"
+//#import "YJPostHttpRequest.h"
+//#import "YJPostImageRequest.h"
+#import "Config.h"
+#import "GlobalConfig.h"
+#import "UIView+TapAction.h"
+#import "UIImage+Extension.h"
+#import "UIColor+Hex.h"
+//#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+WZB.h"
+#import "UIView+Extension.h"
+//#import "NSString+Check.h"
+//#import <MJExtension.h>
+#import <MJRefresh.h>
+//#import <UIImageView+WebCache.h>
+//#import "Tools.h"
+#import <IQKeyboardManager.h>
+//#import <Photos/Photos.h>
+//#import <TZImagePickerController.h>
+//#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDKUI.h>
+//#import "WXApiManager.h"
+//#import "AliApiManager.h"
+
+#endif /* RRKShop_pch */
+#endif
