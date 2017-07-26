@@ -44,7 +44,7 @@
     
     _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [_hud showAnimated:YES];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dzfx8.com/"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app.dzfx8.cn/home/Login"]]];
     
     
 }
@@ -76,9 +76,10 @@
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSString *titleHtml = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    
-    self.title = titleHtml;
+//    NSString *titleHtml = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+//    
+//    self.title = titleHtml;
+    self.title = @"大众分享";
     [_hud hideAnimated:YES];
     
 }
