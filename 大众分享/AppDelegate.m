@@ -19,8 +19,8 @@
 #define WXkey @"wxc2b128af126e5634"
 #define WXSecret @"d3e0090b64a4d613259a9a66f013b3df"
 
-#define QQId  @"1106101035"
-#define QQKey @"2dxTkbfCDhE6tyvP"
+#define QQId  @"1106276982"
+#define QQKey @"9rmHCbgKTG1eVniR"
 @interface AppDelegate ()
 
 @end

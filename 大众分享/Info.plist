@@ -37,8 +37,8 @@
 			<string>qq</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ41EDC32B</string>
-				<string>tencent1106101035</string>
+				<string>QQ41F07276</string>
+				<string>tencent1106276982</string>
 			</array>
 		</dict>
 		<dict>
@@ -55,7 +55,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqqapi</string>
-		<string>tencent100371282</string>
+		<string>tencent1106276982</string>
 		<string>mqq</string>
 		<string>wxc2b128af126e5634</string>
 		<string>weixin</string>
