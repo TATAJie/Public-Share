@@ -41,6 +41,10 @@
     [self.window makeKeyAndVisible];
     // 3.显示窗口
     [self.window makeKeyAndVisible];
+    
+    
+    
+    [self shareSDKRegisn];
     return YES;
 }
 
