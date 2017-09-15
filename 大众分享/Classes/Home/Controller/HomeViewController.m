@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "SQCodeViewController.h"
 #import "ShareTools.h"
-@interface HomeViewController ()<UIWebViewDelegate>
+@interface HomeViewController ()<UIWebViewDelegate,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong,nonatomic) MBProgressHUD *hud;
 @end
@@ -21,8 +21,8 @@
     // Do any additional setup after loading the view from its nib.
     self.webView.backgroundColor = [UIColor colorWithHex:0xf8f8f8];
     self.webView.delegate = self;
-    
-    
+    self.webView.scalesPageToFit = YES;
+    self.webView.scrollView.delegate = self;
     UIButton *btnRight = [UIButton buttonWithType:UIButtonTypeCustom];
     btnRight.frame = CGRectMake(0, 0, 23, 23);
     [btnRight setBackgroundImage:[UIImage imageNamed:@"Home_Share"] forState:UIControlStateNormal];
@@ -37,7 +37,7 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:btnLeft];
     self.navigationItem.leftBarButtonItem = leftItem;
 
-    
+    self.webView.scrollView.bounces = YES;
     
     
     
@@ -80,10 +80,30 @@
 //    self.title = titleHtml;
     self.title = @"大众分享";
     [_hud hideAnimated:YES];
-    
+
 }
+
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     [_hud hideAnimated:YES];
 }
+
+#pragma mark ------UIScrollViewDelegate
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint point = scrollView.contentOffset;
+    if (point.x != 0) {
+        scrollView.contentOffset = CGPointMake(0, point.y);
+    }
+    if (point.y <= 0) {
+        scrollView.contentOffset = CGPointMake(0, 0);
+    }else
+    {
+        if (scrollView.contentSize.height - scrollView.contentOffset.y <= Screen_Height-64.) {
+            scrollView.contentOffset = CGPointMake(0,scrollView.contentSize.height-(Screen_Height-64.));
+        }
+    }
+}
+
 @end
