@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 //#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 @interface BaseViewController : UIViewController<UINavigationControllerDelegate>
-//<UINavigationControllerDelegate,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 
 @end

@@ -23,7 +23,6 @@
     self.webView.delegate = self;
     
     
-    
     UIButton *btnRight = [UIButton buttonWithType:UIButtonTypeCustom];
     btnRight.frame = CGRectMake(0, 0, 23, 23);
     [btnRight setBackgroundImage:[UIImage imageNamed:@"Home_Share"] forState:UIControlStateNormal];
@@ -44,7 +43,7 @@
     
     _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [_hud showAnimated:YES];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app.dzfx8.cn/home/Login"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app.dzfx8.cn"]]];
     
     
 }

@@ -478,7 +478,7 @@
 				TargetAttributes = {
 					8F720DBA1F0F619C00DE7FD7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A8DSKQ4M35;
+						DevelopmentTeam = ZCWTTXX43R;
 						ProvisioningStyle = Automatic;
 					};
 					8F720DD31F0F619C00DE7FD7 = {
@@ -851,12 +851,14 @@
 			baseConfigurationReference = 372A277BE350F7EBCA6FA9EE /* Pods-大众分享.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A8DSKQ4M35;
+				DEVELOPMENT_TEAM = ZCWTTXX43R;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/大众分享/DZFX.pch";
 				INFOPLIST_FILE = "大众分享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gztz.dzfx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -865,12 +867,14 @@
 			baseConfigurationReference = 6E3C024E524B526E22AFC94D /* Pods-大众分享.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A8DSKQ4M35;
+				DEVELOPMENT_TEAM = ZCWTTXX43R;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/大众分享/DZFX.pch";
 				INFOPLIST_FILE = "大众分享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gztz.dzfx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
